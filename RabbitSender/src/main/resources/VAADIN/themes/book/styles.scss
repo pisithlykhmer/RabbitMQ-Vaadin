@@ -1,0 +1,6 @@
+@import "book";
+
+.book {
+
+  @include book;
+}

@@ -1,0 +1,24 @@
+@import "../valo/valo.scss";
+@mixin book {
+
+  @include valo;
+
+  .bg {
+    background: gray;
+    border-radius: 5px;
+  }
+  .send-button {
+    margin-top: 24px;
+    font-weight: bold !important;
+    color: #FFFFFF !important;
+    background: #8DC63F !important;
+    border: 1px solid #8DC63F !important;
+    border-radius: 4px !important;
+  }
+  .header-label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #04448E;
+  }
+}
