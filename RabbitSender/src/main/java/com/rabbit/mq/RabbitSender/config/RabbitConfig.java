@@ -1,6 +1,5 @@
 package com.rabbit.mq.RabbitSender.config;
 
-import com.rabbit.mq.RabbitSender.message.CreatedBookChannel;
 import org.springframework.amqp.core.TopicExchange;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.stream.annotation.EnableBinding;
@@ -10,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.inject.Inject;
 
 @Configuration
-@EnableBinding(value = {CreatedBookChannel.class, Source.class})
+@EnableBinding(value = {MultiInputSource.class, Source.class})
 public class RabbitConfig {
 
   @Bean

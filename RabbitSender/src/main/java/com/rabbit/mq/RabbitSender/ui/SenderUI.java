@@ -17,7 +17,7 @@ public class SenderUI extends UI {
   private TextField titleTextField = new TextField("Title");
   private TextField authorTextField = new TextField("Author");
   private Button sendButton;
-  private final CreateBookForwarder createBookForwarder;
+  private transient CreateBookForwarder createBookForwarder;
   private static final String EMPTY = "";
   private final transient Binder<Book> bookBinder = new BeanValidationBinder<>(Book.class);
   private static final String SEND_BUTTON_STYLE = "send-button borderless";

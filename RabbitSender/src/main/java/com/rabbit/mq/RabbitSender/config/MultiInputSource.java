@@ -1,9 +1,9 @@
-package com.rabbit.mq.RabbitSender.message;
+package com.rabbit.mq.RabbitSender.config;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.messaging.SubscribableChannel;
 
-public interface CreatedBookChannel {
+public interface MultiInputSource {
   String SUBSCRIBER = "create-book";
 
   @Input(SUBSCRIBER)
